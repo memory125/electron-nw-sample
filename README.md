@@ -1,7 +1,7 @@
 # Electron & NW.js Sample
 This repo is for storing the following sample.
-* electron 
-* NW.js
+* [Electron](http://electronjs.org/) 
+* [NW.js](https://nwjs.io/)
 
 # Environment Setup
 * Install [Node.js](https://nodejs.org/en/)
