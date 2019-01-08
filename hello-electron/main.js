@@ -16,6 +16,8 @@ app.on('window-all-closed', () => {
 });
 
 app.on('ready', () => {
+    // default browserwindow
+    mainWindow = new BrowserWindow();
     // this size is for pig-2019
 //   mainWindow = new BrowserWindow({
 //       height: 880,
@@ -26,13 +28,13 @@ app.on('ready', () => {
 //   });
 
 // this size if for poems
-mainWindow = new BrowserWindow({
-    height: 980,
-    width: 1150,
-    frame: false,
-    resizable: false
-    //webPreferences: {nodeIntegration: false}
-});
+// mainWindow = new BrowserWindow({
+//     height: 980,
+//     width: 1150,
+//     frame: false,
+//     resizable: false
+//     //webPreferences: {nodeIntegration: false}
+// });
   mainWindow.loadURL(`file://${__dirname}/index.html`);
   mainWindow.on('closed', () => { mainWindow = null; });
 });
