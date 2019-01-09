@@ -2,6 +2,7 @@
     <head>
         <title>Hello Electron</title>
         <link rel="stylesheet" href="app.css">
+        <script src="app.js"></script>
     </head>
     <style>
         body {     
@@ -31,6 +32,9 @@
         </div>     
         <div id="toolbar">
             <div id="current-folder"></div>
+            <script>
+                document.write(getUserHomeFolder());
+            </script>
         </div>      
     </body>
 </html>
