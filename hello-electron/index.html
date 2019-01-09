@@ -30,11 +30,18 @@
             <!-- <img src="./poem.jpg" alt="poem"> -->
             <!-- <img src="./poem1.PNG" alt="poem1">             -->
         </div>     
+        <template id="item-template">
+                <div class="item">
+                    <img class="icon" />
+                    <div class="filename"></div>
+                </div>
+            </template>  
         <div id="toolbar">
             <div id="current-folder"></div>
             <script>
-                document.write(getUserHomeFolder());
+                document.write(getUsersHomeFolder());
             </script>
-        </div>      
+        </div>
+        <div id="main-area"></div>
     </body>
 </html>
