@@ -54,3 +54,9 @@ body {
     padding-top: 1em;
     font-size: 10pt;
 }
+
+span.path:hover, img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+

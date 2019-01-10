@@ -5,6 +5,13 @@ const async = require('async');
 const osenv = require('osenv');
 const path = require('path');
 
+let shell;
+if (process.versions.electron) {
+    shell = require('electron').shell;
+} else {
+    shell = window.require('nw.gui').Shell;
+}
+
 function getUsersHomeFolder() {
     return osenv.home();
 }
@@ -34,6 +41,10 @@ function inspectAndDescribeFile(filePath, cb) {
     });
 }
 
+function openFile(filePath) {
+    shell.openItem(filePath);
+}
+
 function inspectAndDescribeFiles(folderPath, files, cb) {
     async.map(files, (file, asyncCb) => {
         let resolvedFilePath = path.resolve(folderPath, file);
@@ -44,5 +55,6 @@ function inspectAndDescribeFiles(folderPath, files, cb) {
 module.exports = {
     getUsersHomeFolder,
     getFilesInFolder,
+    openFile,
     inspectAndDescribeFiles
 }
