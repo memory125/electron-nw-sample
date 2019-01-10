@@ -28,9 +28,12 @@ This repo is for storing the following sample.
     electron .
     ```
 
-# Hello-nwjs
-* The 1st `NW.js` sample.
+# Hello
+* The 1st `NW.js` & `Electron` sample.
 * Add `input` and `button` components.
+* Add feature on traversing directory.
+* Add feature on displaying `directory` & `file` feature.
+* Add new feature for `search`.
 
-# Hello-electron
-* The 1st `Electron` sample.
+# Hello-extention
+* The extended `NW.js` & `Electron` sample.
