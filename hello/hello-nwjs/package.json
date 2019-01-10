@@ -1,0 +1,10 @@
+{
+    "name": "hello-nwjs",
+    "version": "1.0.0",
+    "main": "index.html",
+    "dependencies": {
+        "async": "^2.6.1",
+        "lunr": "^2.3.5",
+        "osenv": "^0.1.5"
+    }
+}

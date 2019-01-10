@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Hello Electron</title>
+        <link rel="stylesheet" href="app.css">
+        <script src="app.js"></script>
+    </head>
+    <style>
+        body {     
+        background: lightblue;   
+        text-align: center;
+        color: royalblue;
+        font: bold;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: italic
+      }
+    </style>
+    <body>    
+        <h1>Welcome to Electron World!</h1>
+        <div class="login">
+            <form>
+                Name:<br>
+                <input type="text" name="username">
+                <br>
+                Password:<br>
+                <input type="password" name="pwd">
+            </form> 
+            <button>Register</button>
+            <button>Submit</button>
+            <!-- <img src="./pig-2019.jpg" alt="Happy New Year"> -->
+            <!-- <img src="./poem.jpg" alt="poem"> -->
+            <!-- <img src="./poem1.PNG" alt="poem1">             -->
+        </div>     
+        <template id="item-template">
+                <div class="item">
+                    <img class="icon" />
+                    <div class="filename"></div>
+                </div>
+            </template>  
+        <div id="toolbar">
+            <div id="current-folder"></div>
+            <input type="search" id="search" results="5" placeholder="Search" />
+            <script>
+                document.write(fileSystem.getUsersHomeFolder());
+            </script>            
+        </div>
+        <div id="main-area"></div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Hello NW.js</title>
+        <link rel="stylesheet" href="app.css">
+        <script src="app.js"></script>
+    </head>
+    <body bgcolor="lightblue">
+        <h1>Welcome to NW World!</h1>
+        <div class="login">
+            <form>
+                Name:<br>
+                <input type="text" name="username">
+                <br>
+                Password:<br>
+                <input type="password" name="pwd">
+            </form> 
+            <button>Register</button>
+            <button>Submit</button>
+        </div>    
+        <template id="item-template">
+                <div class="item">
+                    <img class="icon" />
+                    <div class="filename"></div>
+                </div>
+            </template>  
+        <div id="toolbar">
+            <div id="current-folder"></div>
+            <input type="search" id="search" results="5" placeholder="Search" />
+            <script>
+                  document.write(fileSystem.getUsersHomeFolder());
+            </script>
+        </div>
+        <div id="main-area"></div> 
+    </body>
+</html>
