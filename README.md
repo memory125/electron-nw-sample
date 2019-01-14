@@ -37,3 +37,6 @@ This repo is for storing the following sample.
 
 # Hello-extention
 * The extended `NW.js` & `Electron` sample.
+
+# Kiosk-mode
+* The Kiosk app.
