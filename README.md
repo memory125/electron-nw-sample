@@ -39,4 +39,4 @@ This repo is for storing the following sample.
 * The extended `NW.js` & `Electron` sample.
 
 # Kiosk-mode
-* The Kiosk app.
+* The Kiosk `NW.js` & `Electron` sample.
