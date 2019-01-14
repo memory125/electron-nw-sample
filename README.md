@@ -40,3 +40,6 @@ This repo is for storing the following sample.
 
 # Kiosk-mode
 * The Kiosk `NW.js` & `Electron` sample.
+
+# Tray-sample
+* The tray `NW.js` & `Electron` sample.
